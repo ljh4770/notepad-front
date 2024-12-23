@@ -1,0 +1,62 @@
+/* 회원가입 페이지 전체 스타일 */
+.signup {
+  max-width: 400px; /* 회원가입 박스 최대 너비 */
+  width: 90%; /* 반응형: 화면 너비의 90% */
+  margin: 50px auto; /* 위아래 50px, 가로축 중앙 정렬 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* 제목 스타일 */
+.signup h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 입력 필드 스타일 */
+.signup input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 회원가입 버튼 스타일 */
+.signup button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup button:hover {
+  background-color: #0056b3;
+}
+
+/* 버튼 간 간격 조정 */
+.signup button + button {
+  margin-top: 10px;
+}
+
+/* 에러 메시지 스타일 */
+.signup p {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px; /* 버튼과 에러 메시지 간의 간격 */
+  margin-bottom: 0;
+  text-align: center;
+}

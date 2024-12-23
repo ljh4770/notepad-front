@@ -1,0 +1,144 @@
+/* 전체 노트패드 스타일 */
+.notepad {
+  max-width: 800px; /* 최대 너비 설정 */
+  width: 90%; /* 반응형: 화면 너비의 90% */
+  margin: 50px auto; /* 위아래 50px, 가로축 중앙 정렬 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* 내부 요소를 포함한 크기 계산 */
+}
+
+/* 페이지 전체 스타일 (body 기본 설정 추가) */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* 가로축 중앙 정렬 */
+  align-items: flex-start; /* 세로축에서 컨텐츠 시작 */
+  min-height: 100vh; /* 뷰포트 전체 높이를 사용 */
+  background-color: #f4f4f4; /* 배경 색상 */
+  font-family: Arial, sans-serif;
+}
+/* 헤더 스타일 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem; /* 제목 크기 증가 */
+  color: #333;
+}
+
+/* 로그아웃 버튼 */
+.logout-button {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* 버튼 텍스트 크기 증가 */
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+/* 입력 영역 */
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.note-input input,
+.note-input textarea {
+  width: 100%; /* 부모 컨테이너에 맞게 확장 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 크기를 조정 */
+}
+
+.note-input textarea {
+  min-height: 100px; /* 텍스트 입력 영역의 기본 높이 */
+  resize: vertical; /* 세로 방향만 크기 조정 가능 */
+}
+
+/* 버튼 스타일 */
+.note-input button {
+  align-self: flex-end;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.note-input button:hover {
+  background-color: #45a049;
+}
+
+/* 메모 리스트 */
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 메모 간 간격 증가 */
+}
+
+/* 메모 스타일 */
+.note {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* 긴 단어 줄바꿈 */
+  overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+}
+
+/* 제목 스타일 */
+.note h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #333;
+  word-wrap: break-word; /* 제목에서도 긴 단어 줄바꿈 */
+  overflow-wrap: break-word;
+  text-align: left; /* 제목 왼쪽 정렬 */
+}
+
+/* 내용 스타일 */
+.note p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  word-wrap: break-word; /* 긴 내용 줄바꿈 */
+  overflow-wrap: break-word;
+  white-space: pre-wrap; /* 공백 및 줄바꿈 유지 */
+  text-align: left; /* 내용 왼쪽 정렬 */
+}
+용
+.note button {
+  background-color: #d9534f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.note button:hover {
+  background-color: #c9302c;
+}
