@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://3.18.245.237/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 // 공통 헤더 설정
 const getAuthHeaders = () => {
