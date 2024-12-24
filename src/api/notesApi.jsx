@@ -18,6 +18,7 @@ export const fetchNotes = async () => {
   try {
     const response = await axios.get(`${API_BASE}/note/all`, {
       headers: getAuthHeaders(), // JWT 포함
+      withCredentials: true,
     });
     return response.data;
   } catch (error) {
@@ -32,6 +33,7 @@ export const createNote = async (note) => {
     const response = await axios.post(`${API_BASE}/note/`, note, {
       headers: {
         ...getAuthHeaders(),
+        withCredentials: true,
         "Content-Type": "application/json",
       },
     });

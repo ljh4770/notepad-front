@@ -23,7 +23,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${API_BASE}/user/create`, formData);
+      const response = await axios.post(`${API_BASE}/user/create`, formData,{ withCredentials: true });
       setMessage("Sign-up successful! Redirecting to login...");
       setTimeout(() => {
         navigate("/"); // 회원가입 성공 후 로그인 페이지로 리다이렉트
