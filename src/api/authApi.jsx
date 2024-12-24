@@ -8,7 +8,7 @@ export const login = async (email, password) => {
         { email, password },
         { withCredentials: true } // 쿠키를 포함
     );
-    console.log(response.data);
+    // console.log(response.data);
     localStorage.setItem('access_token', response.data.access_token);
     return response.data;
 };

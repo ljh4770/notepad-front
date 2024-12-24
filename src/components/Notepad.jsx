@@ -14,7 +14,7 @@ function Notepad() {
   useEffect(() => {{
      fetchNotes().then((data) => {
       setNotes(data);
-      console.log(data);
+      // console.log(data);
     }); 
      
     }
