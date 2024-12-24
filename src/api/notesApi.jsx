@@ -33,7 +33,6 @@ export const createNote = async (note) => {
     const response = await axios.post(`${API_BASE}/note/`, note, {
       headers: {
         ...getAuthHeaders(),
-        withCredentials: true,
         "Content-Type": "application/json",
       },
     });
